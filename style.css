@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&family=Work+Sans:wght@100;200;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.leniar-gradient {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 240px;
+    margin-right: 240px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.nav-logo {
+    width: 86.041px;
+    height: 40px;
+
+}
+
+.name-color {
+    color: ;
+}
+
+.nav-name {
+
+    padding: 20px;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.nav-name-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left,
+.nav-about-us,
+.nav-follow-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-follow-us {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    width: 262px;
+    height: 56px;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
