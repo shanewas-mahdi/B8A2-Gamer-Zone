@@ -25,12 +25,19 @@
     color: #0B0223;
 
     font-size: 2.8rem;
-    font-style: normal;
+
     font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
+
+
 }
 
+.description {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 20px 0px;
+
+}
 
 .nav-container {
     display: flex;
@@ -138,4 +145,57 @@ li {
     border-radius: 48px;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     margin-right: ;
+}
+
+.ous-games-content {
+    margin-top: 100px;
+}
+
+.ous-games-content {
+    text-align: center;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.play {
+    display: flex;
+    margin-top: 200px;
+    margin-left: 300px;
+    gap: 250px;
+    align-items: center;
+    margin-right: 80px;
+
+}
+
+.play-img-big {
+    width: 550px;
+    height: 600px;
+
+}
+
+.play-img-small {
+    border-radius: 8px;
+    border: 10px solid #FFF;
+    position: relative;
+    bottom: 150px;
+    right: 100px;
 }
