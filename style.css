@@ -108,7 +108,7 @@ li {
 }
 
 .goat {
-    font-size: 95px;
+    font-size: 5.9rem;
 }
 
 .banner-img {
@@ -226,8 +226,8 @@ li {
     color: #0B0223;
     font-size: .90rem;
     font-weight: 600;
-    /* padding: 20px 30px; */
-    padding-right: 30px;
+    padding: 20px 30px;
+
 
 }
 
@@ -262,6 +262,7 @@ li {
 
 .upper-row {
     padding-top: 130px;
+
 }
 
 .lower-row {
@@ -271,19 +272,30 @@ li {
 /* Footer */
 footer {
     background: #0B0223;
+    padding: 0px 300px;
 
 }
 
-footer div {
+
+.footer-links {
+    display: grid;
     text-align: center;
+    grid-template-columns: repeat(6, 1fr);
+    padding-top: 60px;
 }
 
-.footer-links,
-.footer-icons-container,
+.footer-icons-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 60px;
+    padding-left: 100px;
+}
+
 .footer-links2 {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
     padding-top: 60px;
 }
 
@@ -332,14 +344,19 @@ footer h3 {
     .nav-about-us,
     .banner-container,
     .card-container,
-    .play,
-    .category-row {
+    .play {
         flex-direction: column;
         justify-items: center;
     }
 
+    .nav-container {
+        margin-right: 0px;
+        margin-left: 0px;
+        ;
+    }
+
     .banner-left {
-        margin: 10px;
+        margin: 0px;
         padding: 0px;
         width: 100%;
     }
@@ -366,15 +383,44 @@ footer h3 {
         padding: 20px;
     }
 
-    .banner-container,
-    .nav-container,
-    .our-games {
-        border: 1px solid red;
+    .category-name {
+        padding: 0px;
     }
 
-    .nav-container {
-        margin-right: 0px;
-        margin-left: 0px;
-        ;
+    .category-row {
+        flex-wrap: wrap;
+    }
+
+
+
+
+    .footer-links,
+    .footer-icons-container,
+    .footer-links2,
+    footer {
+        padding: 20px;
+        margin: 0px;
+        gap: 15px;
+
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .footer-links2 {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .footer-icons-container {
+        justify-items: center;
+    }
+
+
+    .upper-row {
+        padding-bottom: 60px;
+        padding-top: 60px;
     }
 }
