@@ -113,6 +113,7 @@ li {
 
 .banner-left {
     background-image: url(./images/Group\ 14.png);
+
 }
 
 .goat {
@@ -188,6 +189,77 @@ li {
 .card-img {
     width: 250px;
 }
+
+.play-button {
+    width: 48px;
+    height: 48px;
+
+}
+
+/* over lay starts */
+.overlay-text {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 10px;
+}
+
+.overlay-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+
+.container {
+    display: flex;
+    /* Use flexbox layout */
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+    /* Allow the image container to expand and fill available space */
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    opacity: 0;
+    /* Initially, make the overlay invisible */
+    transition: opacity 0.3s ease;
+    /* Add a smooth transition effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/* Show the overlay on hover by changing the opacity and order */
+.image-container:hover .overlay {
+    opacity: 1;
+    order: 1;
+    /* Move the overlay to the end of the flex items stack */
+}
+
+
+
+/* overlay ends */
+
+
 
 
 
