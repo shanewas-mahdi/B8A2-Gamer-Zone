@@ -166,6 +166,19 @@ li {
     width: 50%;
 }
 
+/* we are gamer */
+.gamer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 100px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.gamer-content {
+    text-align: end;
+}
+
 /* Our Games */
 .our-games-content {
     margin-top: 100px;
@@ -214,16 +227,16 @@ li {
 
 .container {
     display: flex;
-    /* Use flexbox layout */
+
 }
 
 .image-container {
     position: relative;
     flex: 1;
-    /* Allow the image container to expand and fill available space */
+
 }
 
-img {
+.card img {
     display: block;
     width: 100%;
     height: auto;
@@ -238,9 +251,7 @@ img {
     border-radius: 16px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
     opacity: 0;
-    /* Initially, make the overlay invisible */
-    transition: opacity 0.3s ease;
-    /* Add a smooth transition effect */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,13 +259,12 @@ img {
 
 }
 
-/* Show the overlay on hover by changing the opacity and order */
+
 .image-container:hover .overlay {
     opacity: 1;
     order: 1;
-    /* Move the overlay to the end of the flex items stack */
-}
 
+}
 
 
 /* overlay ends */
@@ -447,7 +457,8 @@ footer h3 {
     .nav-about-us,
     .banner-container,
     .card-container,
-    .play {
+    .play,
+    .gamer-container {
         flex-direction: column;
         justify-items: center;
     }
@@ -462,6 +473,8 @@ footer h3 {
 
     .banner-container {
         margin-top: 20px;
+        flex-direction: column-reverse;
+
     }
 
     .banner-left {
@@ -472,6 +485,10 @@ footer h3 {
         width: 100%;
     }
 
+    .banner-content {
+        padding: 50px;
+    }
+
     .banner-btn-container {
         justify-content: center;
     }
@@ -479,6 +496,14 @@ footer h3 {
     .banner-img-container {
         width: 100%;
 
+    }
+
+    .gamer-container {
+        gap: 100px;
+    }
+
+    .gamer-content {
+        text-align: center;
     }
 
     .our-games-content {
@@ -555,4 +580,15 @@ footer h3 {
         padding-bottom: 60px;
         padding-top: 60px;
     }
+
+    .gamer-container {
+        padding: 20px 20px;
+
+    }
+
+    .gamer-img {
+        width: 100%;
+    }
+
+
 }
