@@ -27,6 +27,7 @@
     font-size: 2.8rem;
 
     font-weight: 600;
+    padding: 0px 10px;
 
 
 }
@@ -151,15 +152,14 @@ li {
     width: 50%;
 }
 
-
-.ous-games-content {
+/* Our Games */
+.our-games-content {
     margin-top: 100px;
-}
-
-.ous-games-content {
+    padding: 10px;
     text-align: center;
 
 }
+
 
 .card-img {
     width: 100%;
@@ -172,9 +172,7 @@ li {
 .card {
     width: 300px;
     height: 480px;
-
     margin-top: 30px;
-
 }
 
 .card-container {
@@ -194,7 +192,6 @@ li {
     gap: 250px;
     align-items: center;
     margin-right: 80px;
-
 }
 
 .play-img-big {
@@ -227,8 +224,6 @@ li {
     font-size: .90rem;
     font-weight: 600;
     padding: 20px 30px;
-
-
 }
 
 
@@ -349,38 +344,72 @@ footer h3 {
         justify-items: center;
     }
 
+
+
     .nav-container {
         margin-right: 0px;
         margin-left: 0px;
         ;
     }
 
+    .banner-container {
+        margin-top: 20px;
+    }
+
     .banner-left {
+        text-align: center;
+
         margin: 0px;
         padding: 0px;
         width: 100%;
     }
 
+    .banner-btn-container {
+        justify-content: center;
+    }
+
     .banner-img-container {
         width: 100%;
-        border: 2px solid red;
-        position: relative;
+
+    }
+
+    .our-games-content {
+        padding: 10px;
+    }
+
+    .our-games-des {
+        font-size: .95rem;
+    }
+
+    /* .play-right {
+        transform: scale(0.5);
+    } */
+
+    .play {
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    .play-img-big {
+        width: 334.833px;
+        height: 450px;
+
+    }
+
+    .play-img-small {
+        width: 150px;
+        height: 250px;
 
     }
 
     .play-right {
-        transform: scale(0.5);
-    }
-
-    .play {
-        border: 2px solid red;
-        margin: 0px;
-        gap: 10px;
-        margin-top: 40px;
+        margin-left: 100px;
     }
 
     .play-content {
-        padding: 20px;
+        padding: 0 10px;
+
+        text-align: center;
     }
 
     .category-name {
@@ -423,4 +452,5 @@ footer h3 {
         padding-bottom: 60px;
         padding-top: 60px;
     }
+
 }
