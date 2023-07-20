@@ -114,6 +114,7 @@ li {
 .banner-left {
     background-image: url(./images/Group\ 14.png);
 
+
 }
 
 .goat {
@@ -122,6 +123,7 @@ li {
 
 .banner-img-container {
     width: 100%;
+
 }
 
 .banner-img {
@@ -522,6 +524,7 @@ footer h3 {
     .play {
         margin: 0px;
         margin-top: 40px;
+        gap: 0px;
     }
 
     .play-copy .play-right {
@@ -541,7 +544,7 @@ footer h3 {
     }
 
     .category-name {
-        padding: 0px;
+        padding-left: 15px;
     }
 
     .category-row {
@@ -591,4 +594,112 @@ footer h3 {
     }
 
 
+}
+
+
+/* Medium Screnn */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .nav-container,
+    .nav-left,
+    .nav-about-us,
+    .banner-container,
+    .card-container,
+    .play,
+    .gamer-container {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .banner-img-container {
+        width: 100%;
+
+    }
+
+    .banner-container {
+
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-left {
+        text-align: center;
+
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .banner-btn-container {
+        justify-content: center;
+    }
+
+
+
+    .play-right {
+        transform: scale(0.65);
+        margin-left: 100px;
+    }
+
+
+
+
+    .play {
+        margin: 0px;
+        margin-top: 40px;
+        gap: 0px;
+    }
+
+    .play-copy .play-right {
+        margin-left: 20px;
+        margin-right: 80px;
+    }
+
+
+
+    .play-content {
+        padding: 0 10px;
+
+        text-align: center;
+    }
+
+    .category-row {
+        flex-wrap: wrap;
+    }
+
+    .footer-links,
+    .footer-icons-container,
+    .footer-links2,
+    footer {
+        padding: 20px;
+        margin: 0px;
+        gap: 15px;
+
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .footer-links2 {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .footer-icons-container {
+        justify-items: center;
+    }
+
+    .gamer-container {
+        padding: 20px 20px;
+
+    }
+
+    .gamer-img {
+        width: 100%;
+    }
+
+    .gamer-content {
+        text-align: center;
+    }
 }
