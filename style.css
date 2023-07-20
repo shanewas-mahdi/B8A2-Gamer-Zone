@@ -112,7 +112,7 @@ li {
 }
 
 .banner-img {
-    width: 600px;
+    width: 100%;
     height: 550px;
 
 }
@@ -147,6 +147,10 @@ li {
     margin-right: ;
 }
 
+.banner-img-container {
+    width: 50%;
+}
+
 
 .ous-games-content {
     margin-top: 100px;
@@ -176,7 +180,7 @@ li {
 .card-container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 25px;
     padding-left: 50px;
     padding-right: 50px;
@@ -245,6 +249,8 @@ li {
     }
 
 }
+
+
 
 .category-row {
     display: flex;
@@ -323,9 +329,52 @@ footer h3 {
 
     .nav-container,
     .nav-left,
-    .nav-about-us {
+    .nav-about-us,
+    .banner-container,
+    .card-container,
+    .play,
+    .category-row {
         flex-direction: column;
+        justify-items: center;
     }
 
+    .banner-left {
+        margin: 10px;
+        padding: 0px;
+        width: 100%;
+    }
 
+    .banner-img-container {
+        width: 100%;
+        border: 2px solid red;
+        position: relative;
+
+    }
+
+    .play-right {
+        transform: scale(0.5);
+    }
+
+    .play {
+        border: 2px solid red;
+        margin: 0px;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .play-content {
+        padding: 20px;
+    }
+
+    .banner-container,
+    .nav-container,
+    .our-games {
+        border: 1px solid red;
+    }
+
+    .nav-container {
+        margin-right: 0px;
+        margin-left: 0px;
+        ;
+    }
 }
